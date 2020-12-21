@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" " http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.wking.mapper.userMapper">
+ <insert id="register" parameterType="com.wking.pojo.User" >
+     insert into user(uid,username,PASSWORD,email,telephone) values (#{uid},#{username},#{PASSWORD},#{email},#{telephone})
+ </insert>
+    <select id="login" parameterType="com.wking.pojo.User" resultType="com.wking.pojo.User">
+        select * from user where username=#{username} and PASSWORD=#{PASSWORD}
+    </select>
+
+</mapper>

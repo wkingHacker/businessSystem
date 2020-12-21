@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" " http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.wking.mapper.orderItemMapper">
+    <resultMap id="itemMap" type="com.wking.pojo.OrderItem">
+        <id column="itemid" jdbcType="VARCHAR" property="id" />
+        <result column="COUNT" jdbcType="INTEGER" property="qty"/>
+        <result column="pid" jdbcType="INTEGER" property="pid"></result>
+
+    </resultMap>
+    <insert id="add" >
+      insert into orderitem(oid,pid,subtotal,COUNT,itemid)
+values (#{oid},#{o.pid},#{o.price},#{o.qty},#{o.id})
+  </insert>
+    <select id="selectpidByoid" parameterType="java.lang.String" resultMap="itemMap">
+        select * from orderitem where oid=#{oid}
+    </select>
+</mapper>

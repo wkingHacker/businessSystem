@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>淘库商城</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+
+			<!--
+            	菜单栏和导航条
+            -->
+
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<title>Insert title here</title>
+
+			
+
+			<!--
+            	描述：菜单栏
+            -->
+			<div class="container-fluid">
+				<div class="col-md-4">
+					<img src="img/logo3.png">
+				</div>
+				<div class="col-md-3" style="padding-top:20px;float:right">
+					<ol class="list-inline">
+
+						<li>欢迎您：admin</li>
+						<li>
+							<a href="/store/login?methodName=logout">退出</a>
+						</li>
+						<li>
+							<a href="orderInfo.html">我的订单</a>
+						</li>
+
+						<li>
+							<a href="cart.html">购物车</a>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!--
+            	描述：导航条
+            -->
+			<div class="container-fluid">
+				<nav class="navbar navbar-inverse">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="index.html">首页</a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav" id="clist">
+								<li>
+									<a href="list.html">手机数码</a>
+								</li>
+								<li>
+									<a href="list.html">电脑办公</a>
+								</li>
+								<li>
+									<a href="list.html">家具家居</a>
+								</li>
+								<li>
+									<a href="list.html">鞋靴箱包</a>
+								</li>
+								<li>
+									<a href="list.html">图书音像</a>
+								</li>
+								<li>
+									<a href="list.html">母婴孕婴</a>
+								</li>
+								<li>
+									<a href="list.html">汽车用品</a>
+								</li>
+								<li>
+									<a href="list.html">运动户外</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			
+
+			<!--
+            	描述：轮播条
+            -->
+			<div class="container-fluid">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item">
+							<img src="img/1.jpg" style="width:100%;height: 500px;">
+							<div class="carousel-caption">
+
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/2.jpg" style="width:100%;height: 500px;">
+							<div class="carousel-caption">
+
+							</div>
+						</div>
+						<div class="item active">
+							<img src="img/3.jpg" style="width: 100%;height: 500px;">
+							<div class="carousel-caption">
+
+							</div>
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<!--
+            	描述：商品显示
+            -->
+			<div class="container-fluid">
+				<div class="col-md-12">
+					<h2>最新商品&nbsp;&nbsp;<img src="img/title2.jpg"></h2>
+				</div>
+				<div class="col-md-2" style="border:1px solid #E7E7E7;border-right:0;padding:0;">
+					<img src="products/hao/big01.jpg" width="205" height="404" style="display: inline-block;">
+				</div>
+				<div class="col-md-10">
+					<div class="col-md-6" style="text-align:center;height:200px;padding:0px;">
+						<a href="#">
+							<img src="products/hao/middle01.jpg" width="516px" height="200px" style="display: inline-block;">
+						</a>
+					</div>
+					<!--循环得到最新商品  -->
+
+					<div class="col-md-2" style="text-align:center;height:200px;padding:10px 0px;">
+						<a href="product.html"><img src="products/1/c_0050.jpg" width="150" height="150" style="display: inline-block;"></a>
+						<p>
+							<a href="product.html">Apple iPad Air 2 MGLW2CH/A</a>
+						</p>
+						<p>
+							<font color="#E4393C" style="font-size:16px">¥2399.0</font>
+						</p>
+					</div>
+
+					<div class="col-md-2" style="text-align:center;height:200px;padding:10px 0px;">
+						<a href="product.html"><img src="products/1/c_0047.jpg" width="150" height="150" style="display: inline-block;"></a>
+						<p>
+							<a href="product.html">联想（Lenovo）H3050 台式电脑</a>
+						</p>
+						<p>
+							<font color="#E4393C" style="font-size:16px">¥5099.0</font>
+						</p>
+					</div>
+
+					<div class="col-md-2" style="text-align:center;height:200px;padding:10px 0px;">
+						<a href="product.html"><img src="products/1/c_0023.jpg" width="150" height="150" style="display: inline-block;"></a>
+						<p>
+							<a href="product.html">sonim XP7700 4G手机</a>
+						</p>
+						<p>
+							<font color="#E4393C" style="font-size:16px">¥1799.0</font>
+						</p>
+					</div>
+
+					<div class="col-md-2" style="text-align:center;height:200px;padding:10px 0px;">
+						<a href="product.html"><img src="products/1/c_0002.jpg" width="150" height="150" style="display: inline-block;"></a>
+						<p>
+							<a href="product.html">中兴 AXON</a>
+						</p>
+						<p>
+							<font color="#E4393C" style="font-size:16px">¥2899.0</font>
+						</p>
+					</div>
+
+					<div class="col-md-2" style="text-align:center;height:200px;padding:10px 0px;">
+						<a href="product.html"><img src="products/1/c_0016.jpg" width="150" height="150" style="display: inline-block;"></a>
+						<p>
+							<a href="product.html">华为 HUAWEI Mate S 臻享版</a>
+						</p>
+						<p>
+							<font color="#E4393C" style="font-size:16px">¥4200.0</font>
+						</p>
+					</div>
+
+					<div class="col-md-2" style="text-align:center;height:200px;padding:10px 0px;">
+						<a href="product.html"><img src="products/1/c_0037.jpg" width="150" height="150" style="display: inline-block;"></a>
+						<p>
+							<a href="product.html">戴尔（DELL）灵越 飞匣3000系列</a>
+						</p>
+						<p>
+							<font color="#E4393C" style="font-size:16px">¥3399.0</font>
+						</p>
+					</div>
+
+					<div class="col-md-2" style="text-align:center;height:200px;padding:10px 0px;">
+						<a href="product.html"><img src="products/1/c_0001.jpg" width="150" height="150" style="display: inline-block;"></a>
+						<p>
+							<a href="product.html">小米 4c 标准版</a>
+						</p>
+						<p>
+							<font color="#E4393C" style="font-size:16px">¥1399.0</font>
+						</p>
+					</div>
+
+					<div class="col-md-2" style="text-align:center;height:200px;padding:10px 0px;">
+						<a href="product.html"><img src="products/1/c_0003.jpg" width="150" height="150" style="display: inline-block;"></a>
+						<p>
+							<a href="product.html">华为荣耀6</a>
+						</p>
+						<p>
+							<font color="#E4393C" style="font-size:16px">¥1599.0</font>
+						</p>
+					</div>
+
+					<div class="col-md-2" style="text-align:center;height:200px;padding:10px 0px;">
+						<a href="product.html"><img src="products/1/c_0004.jpg" width="150" height="150" style="display: inline-block;"></a>
+						<p>
+							<a href="product.html">联想 P1</a>
+						</p>
+						<p>
+							<font color="#E4393C" style="font-size:16px">¥2199.0</font>
+						</p>
+					</div>
+
+				</div>
+			</div>
+			<!--
+            	描述：广告部分
+            -->
+			<div class="container-fluid" style="text-align: center;margin-top: 20px;">
+				<img src="products/hao/ad.jpg" width="100%">
+			</div>
+			<!--
+            	描述：页脚部分
+            -->
+			<div class="container-fluid">
+
+				<div style="text-align: center;margin-top: 20px;">
+					<ul class="list-inline">
+						<li>
+							<a href="http://www.feicuiedu.cn/" target="_blank">关于我们</a>
+						</li>
+						<li>
+							<a href="http://www.feicuiedu.cn/" target="_blank">联系我们</a>
+						</li>
+						<li>
+							<a>招贤纳士</a>
+						</li>
+						<li>
+							<a>法律声明</a>
+						</li>
+						<li>
+							<a>友情链接</a>
+						</li>
+						<li>
+							<a>支付方式</a>
+						</li>
+						<li>
+							<a>配送方式</a>
+						</li>
+						<li>
+							<a>服务声明</a>
+						</li>
+						<li>
+							<a>广告声明</a>
+						</li>
+					</ul>
+				</div>
+				<div style="text-align: center;margin-top: 5px;margin-bottom:20px;">
+					Copyright © 2018-2019 弘成科技 版权所有
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>
