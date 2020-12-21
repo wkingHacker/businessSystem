@@ -50,7 +50,7 @@ public class userController {
     @RequestMapping("/face")
     public String checkFace()
     {   //建立与阿里云的连接
-        DefaultProfile profile = DefaultProfile.getProfile("cn-shanghai","LTAI4GEH2M1ong5MhRTBt6Xh","1Y5ZiC8YrNWFxQgjmKYGQKSyhmvLt0");
+        DefaultProfile profile = DefaultProfile.getProfile("cn-shanghai","","");
         IAcsClient client = new DefaultAcsClient(profile);
 
         return "";
